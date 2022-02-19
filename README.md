@@ -2,4 +2,4 @@
 Desafio de projeto git/github
 ## Repositório projeto sobre o Git/Github
 ### links uteis
-[link para sintaxe básica] (https://www.markdownguide.org/getting-started/)
+[Link Para Sintaxe Básica](https://www.markdownguide.org/getting-started/)
