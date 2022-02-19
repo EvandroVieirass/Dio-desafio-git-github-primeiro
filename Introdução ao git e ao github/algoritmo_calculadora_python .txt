@@ -1,0 +1,87 @@
+import math
+def bem_vindo():
+    """
+    Esse projeto e de uma calculadora que contem as funções basicas como
+    soma,subtraçao,divisao,multiplicaçao
+    """
+    print('BEM VINDO A CALCULADORA EVANDRO VIEIRA')
+# bloco de codigo que faz a calculadora funcionar
+
+
+def calculadora():
+    operaçao = input(''' Por favor escolha a operação matematica desejada
+                      + para adição
+                      - para subtração
+                      * para multiplicação
+                      / para divisão
+                      ** para potencia
+                      s para calcular a sobra
+                      % para porcentagem
+                      R para raiz quadrada
+                        = ''')
+   
+    
+        
+    if operaçao == '+':
+        valor_1 = int(input("digite o valor:"))
+        valor_2 = int(input("digite o valor:"))
+        print('{} + {} ='.format(valor_1, valor_2))
+        print(valor_1 + valor_2)
+    elif operaçao == "R":
+        raiz = float(input("Digite a raiz quadrada: "))
+        resultado = math.sqrt(raiz)
+        print(resultado)
+
+    elif operaçao == '-':
+        valor_1 = int(input("digite o valor:"))
+        valor_2 = int(input("digite o valor:"))
+        print('{} - {} ='.format(valor_1, valor_2))
+        print(valor_1 - valor_2)
+    elif operaçao == '*':
+        valor_1 = int(input("digite o valor:"))
+        valor_2 = int(input("digite o valor:"))
+        print('{} * {} ='.format(valor_1, valor_2))
+        print(valor_1 * valor_2)
+
+    elif operaçao == '/':
+        valor_1 = int(input("digite o valor:"))
+        valor_2 = int(input("digite o valor:"))
+        print('{} // {} ='.format(valor_1, valor_2))
+        print(valor_1 // valor_2)
+
+    elif operaçao == '**':
+        valor_1 = int(input("digite o valor:"))
+        valor_2 = int(input("digite o valor:"))
+        print('{} ** {} ='.format(valor_1,valor_2))
+        print(valor_1 ** valor_2)
+    elif operaçao == 's':
+        valor_1 = int(input("digite o valor:"))
+        valor_2 = int(input("digite o valor:"))
+        print ('{} % {} ='.format(valor_1,valor_2))
+        print (valor_1 % valor_2)
+    elif operaçao == "%":
+        valor_1 = int(input("digite o valor:"))
+        valor_2 = int(input("digite o valor:"))
+        a = valor_1
+        b = valor_2
+        c = a * b
+        print (c / 100)
+
+    else:
+        print('tipo invalido de operação')
+
+    repete_calculadora()
+
+
+def repete_calculadora():
+    repete = str(input(''' S para continuar N para sair: '''))
+    if repete == 'S':
+        calculadora()
+    elif repete == 'N':
+        print('ate logo')
+    else:
+        print('error')
+
+
+bem_vindo()
+calculadora()
